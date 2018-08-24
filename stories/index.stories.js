@@ -9,8 +9,10 @@ import storyAdder from './storyAdder';
 
 const widgetLens = lensPath('content');
 
+const testPattern = ({evtBus}) => {
+    evtBus.subscribe('mdw-btnAction-trigger', _ => action('btnClick')(_));
+};
+
 storiesOf('Demo', module)
     .add('heading', () => '<h1>Hello World</h1>')
-    .add('button', () => storyAdder(btnAction(widgetLens), ({evtBus}) => {
-        evtBus.subscribe('mdw-btnAction-trigger', _ => action('btnClick')(_));
-    }));
+    .add('button', () => storyAdder(btnAction(widgetLens))(_=>testPattern(_)));

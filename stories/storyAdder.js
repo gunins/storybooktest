@@ -3,7 +3,7 @@ import {action} from '@storybook/addon-actions';
 import {addContent, addCss, addScripts} from '../src/client/apploader';
 import {qs} from '../src/client/dom/selectors';
 
-export default (widget, cb) => {
+export default widget => cb => {
     const div       = document.createElement('div');
     div.innerHTML   = `<div class='root'></div>`;
     const container = qs('div', div);
