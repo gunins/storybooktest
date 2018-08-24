@@ -1,0 +1,40 @@
+/** +++++++++++++++++++++++++
+globals-branding-default.scss
++++++++++++++++++++++++++ **/
+/** +++++++++++++++++++++++++
+globals.scss
++++++++++++++++++++++++++ **/
+/****** GLOBAL VARS ******/
+/*
+$defaultTextColour: #21233a;
+$bgBox: #f2e9df;
+$borderColour: #17a811;
+$defaultTextColour: #3a0307;
+
+$sillyColor: #f1ffff;*/
+.mdg-action {
+    clear: both; }
+
+.mdg-action {
+    text-align: center; }
+
+@media (min-width: 768px) {
+    /* - - - START setup grid */
+    .mdg-action {
+        text-align: left; } }
+
+.mdw-action {
+    clear: both;
+    padding-top: 24px; }
+.mdw-action a {
+    display: inline-block;
+    padding: 20px 48px;
+    font-size: 16px;
+    min-width: 280px;
+    border-radius: 28px;
+    background: #ccc;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 24px; }
+.mdw-action a:hover {
+    color: white; }
