@@ -1,4 +1,4 @@
-import {task} from '../../functional/core/Task';
+import {task} from 'functional/core/Task';
 import template from './_btnAction';
 import {set, view, lensPath} from '../../client/utils/lenses';
 import {compose} from '../../client/utils/curry';

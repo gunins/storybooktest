@@ -1,5 +1,5 @@
-import {task} from '../functional/core/Task';
-import {get} from '../functional/async/Fetch';
+import {task} from 'functional/core/Task';
+import {get} from 'functional/async/Fetch';
 import {lensPath, view} from './utils/lenses';
 import {compose} from "./utils/curry";
 
