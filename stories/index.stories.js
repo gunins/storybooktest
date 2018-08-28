@@ -30,6 +30,7 @@ const fancyButton = task(_ => compose(
 )(_)).through(btnAction(widgetLens, btnTextLens, btnTextLens, btnGroupLens, btnValueLens));
 
 
-storiesOf('Demo', module).addDecorator(withKnobs)
+storiesOf('Demo', module)
+    .addDecorator(withKnobs)
     .add('heading', () => '<h1>Hello World</h1>')
     .add('button', withNotes('A very simple component')(() => storyAdder(fancyButton)(_ => testPattern(_))));
