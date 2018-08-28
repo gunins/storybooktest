@@ -1,7 +1,7 @@
-const template = () => `
+const template = (text, title, group, value) => `
 <div class="mdg-action">
 	<div class="mdw-action">
-		<div><a href="#" data-name="migraine" data-title="First button widget" data-placeholder="Choose tag or type" data-value="Test">This I First fancy Button</a></div>
+		<div><a href="#" data-group="${group}" data-title="${title}"  data-value="${value}">${text}</a></div>
 	</div>
 </div>
 `;

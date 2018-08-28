@@ -7,9 +7,8 @@
         const el   = container();
         const data = {
             title:       el.dataset('title'),
-            name:        el.dataset('name'),
+            name:        el.dataset('group'),
             value:       el.dataset('value'),
-            placeholder: el.dataset('placeholder')
         };
 
         el.on('click touch', e => {
